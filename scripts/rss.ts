@@ -6,10 +6,10 @@ import MarkdownIt from 'markdown-it'
 import type { FeedOptions, Item } from 'feed'
 import { Feed } from 'feed'
 
-const DOMAIN = 'https://antfu.me'
+const DOMAIN = 'https://blog.uway.ml'
 const AUTHOR = {
-  name: 'Anthony Fu',
-  email: 'hi@antfu.me',
+  name: 'Adkimsm',
+  email: '3020035335@qq.com',
   link: DOMAIN,
 }
 const markdown = MarkdownIt({
@@ -26,15 +26,15 @@ async function buildBlogRSS() {
   const files = await fg('pages/posts/*.md')
 
   const options = {
-    title: 'Anthony Fu',
-    description: 'Anthony Fu\' Blog',
-    id: 'https://antfu.me/',
-    link: 'https://antfu.me/',
-    copyright: 'CC BY-NC-SA 4.0 2021 © Anthony Fu',
+    title: 'Adkimsm',
+    description: 'Adkimsm\' Blog',
+    id: 'https://blog.uway.ml/',
+    link: 'https://blog.uway.ml/',
+    copyright: 'CC BY-NC-SA 4.0 2020-present © Adkimsm',
     feedLinks: {
-      json: 'https://antfu.me/feed.json',
-      atom: 'https://antfu.me/feed.atom',
-      rss: 'https://antfu.me/feed.xml',
+      json: 'https://blog.uway.ml/feed.json',
+      atom: 'https://blog.uway.ml/feed.atom',
+      rss: 'https://blog.uway.ml/feed.xml',
     },
   }
   const posts: any[] = (
