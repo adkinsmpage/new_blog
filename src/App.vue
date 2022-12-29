@@ -1,11 +1,11 @@
 <script setup lang="ts">
 useHead({
   meta: [
-    { property: 'og:title', content: 'Anthony Fu' },
+    { property: 'og:title', content: 'Adkimsm' },
     { property: 'og:image', content: 'https://antfu.me/og-icon.png' },
-    { name: 'description', content: 'Anthony Fu\'s Portfolio' },
+    { name: 'description', content: 'Adkimsm\'s Portfolio' },
     { name: 'twitter:card', content: 'summary' },
-    { name: 'twitter:creator', content: '@antfu7' },
+    { name: 'twitter:creator', content: '@adkimsm' },
   ],
 })
 </script>
